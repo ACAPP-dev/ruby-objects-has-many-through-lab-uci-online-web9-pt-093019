@@ -22,7 +22,6 @@ class Artist
   end
 
   def genres
-    #binding.pry
     songs.collect{|song_instance| song_instance.genre}.uniq
   end
 end
