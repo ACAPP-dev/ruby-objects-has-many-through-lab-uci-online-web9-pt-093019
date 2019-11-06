@@ -17,7 +17,7 @@ class Patient
   end
 
   def appointments
-    binding.pry
+    #binding.pry
     Appointment.all.select{|appt_instance| appt_instance.patient == self}
   end
 
