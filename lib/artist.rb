@@ -18,7 +18,7 @@ class Artist
   end
 
   def songs
-    artist_array = Song.all.select{|song_instance| song_instance.artist == self}
+    Song.all.select{|song_instance| song_instance.artist == self}
   end
 
   def genres
