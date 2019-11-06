@@ -16,7 +16,6 @@ class Genre
   end
 
   def artists
-    #binding.pry
     songs.collect {|song_instance| song_instance.artist}
   end
 end
