@@ -19,7 +19,6 @@ class Artist
 
   def songs
     artist_array = Song.all.select{|song_instance| song_instance.artist == self}
-    #binding.pry
   end
 
   def genres
